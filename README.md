@@ -1,15 +1,11 @@
 # Birthday Adda
 
-An Indian birthday surprise MVP: gather apne log, collect throwbacks, friendly khichaai or special mentions, and dil se wishes. Recipients make a wish on the illustrated cake, explore the messages, and download a 1080 × 1920 birthday Story PNG.
+Simple flow: write a personal wish → send the link → recipient saves or shares their birthday card.
 
-Choose friends, family, or partner context. Family selects the gentle mood by default and uses family-specific prompts; Hinglish family reveals use respectful phrasing. Choose English or Hinglish reveal headings; contributions accept text in any language. WhatsApp invite buttons open a draft for the organizer to send, never send automatically. Story PNGs can be posted manually to Instagram, Facebook, or WhatsApp Status. Dates use Indian formatting; delivery is manual, including midnight surprises.
+Three required fields: recipient name, sender name, message. One optional photo. No dashboard or group planning in the main flow.
 
-Run `npm run dev` and open http://127.0.0.1:4173. No dependencies required. Local shared data lives in ignored `.local-data/`. Run `npm test` and `npm run build` to validate and create the Cloudflare Worker artifact.
+Run npm run dev, npm test, npm run build. No dependencies. Local storage in ignored .local-data; hosted records use R2 BUCKET. Existing reveal links remain readable.
 
-Hosted persistence uses the Sites-provisioned R2 binding `BUCKET`. Each celebration stores metadata and separate contributions. Organizer, contributor, and recipient links use separate random capability tokens. Treat those links as passwords. Organizer entries are remembered on the current browser; copy the organizer link for another device.
+Story export is a 1080 × 1920 PNG containing the recipient, message, and sender. Instagram and WhatsApp Status use saved images or supported native file sharing. WhatsApp, X, and Facebook offer link sharing; nothing posts automatically.
 
-The sample uses fictional data and stays in memory. Real celebrations support up to 100 contributions and resized JPEG photos. The MVP does not yet include editing, deletion, invite revocation, scheduled delivery, moderation, or automatic social posting. Story sharing uses downloaded PNGs. A date is display metadata, not a release lock.
-
-New Sites are private to the owner. External contributors cannot access a private deployment until visitor access is explicitly changed. The app's capability links do not override the host's access policy.
-
-Design: Birthday Adda — lilac, coral, lime, deep plum; DM Sans with DM Serif Display; original SVG cake artwork and secret-group-chat stickers. Mobile and desktop layouts, keyboard focus, and reduced-motion support. Design context is recorded in `.21st/design.json`. Existing capability links and stored celebrations remain compatible.
+The hosted preview remains owner-private. External visitors need site access before wish links work. Capability links are private by possession. Dates are internal creation metadata; no scheduling or reminders.

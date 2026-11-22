@@ -1,24 +1,12 @@
 {
   "name": "Birthday Adda",
-  "stack": "Dependency-free HTML, CSS, JavaScript; Cloudflare Worker and R2",
-  "tokens": {
-    "paper": "#fbfaf7",
-    "ink": "#30253f",
-    "lilac": "#ded1f5",
-    "coral": "#ef876f",
-    "lime": "#e2e9b9",
-    "fonts": [
-      "DM Sans",
-      "DM Serif Display"
-    ]
-  },
   "decisions": [
     {
       "date": "2026-11-22",
-      "direction": "Indian birthday adda",
-      "rationale": "Personal group celebrations centered on secret planning, throwbacks, affectionate khichaai and dil se wishes. Friends, family and partner prompt contexts; English or Hinglish reveal headings. WhatsApp invites with explicit user sending, plus Status and Story PNGs.",
-      "preserved": "Capability links, existing records and owner-private hosting audience",
-      "references": "Existing project primitives; 21st search attempted but service transport unavailable. Original cake illustration and sticker composition."
+      "direction": "One personal birthday wish",
+      "flow": "Write wish, send link, recipient saves or shares card",
+      "scope": "Names, message, optional photo. No dashboard, group invitations, mood or language selectors.",
+      "sharing": "PNG Story image, native file sharing where supported, WhatsApp/X/Facebook links"
     }
   ]
 }
