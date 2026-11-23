@@ -7,6 +7,20 @@
       "flow": "Write wish, send link, recipient saves or shares card",
       "scope": "Names, message, optional photo. No dashboard, group invitations, mood or language selectors.",
       "sharing": "PNG Story image, native file sharing where supported, WhatsApp/X/Facebook links"
+    },
+    {
+      "date": "2026-11-22",
+      "direction": "Birthday post",
+      "flow": "Sealed envelope, personal wishes, birthday finale",
+      "scope": "Story-driven homepage, organizer desk, guest note form and recipient experience",
+      "visual": "Aubergine stage, pink stationery, warm cream notes and gold seals. CSS motion responds to interaction and respects reduced-motion settings.",
+      "reference": "Reviewed 21st animated paper and fold references; implemented the envelope in the existing Next.js UI."
+    },
+    {
+      "date": "2026-11-23",
+      "direction": "Pencil-sketch birthday storyboard",
+      "visual": "Scene numbers and ruled notes frame original photos and optional pencil illustrations on warm paper.",
+      "sharing": "Export the current board page as a portrait PNG or share the card link."
     }
   ]
 }

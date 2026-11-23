@@ -2,10 +2,23 @@
   "name": "birthday-wrapped",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
-    "dev": "node scripts/dev.mjs",
-    "test": "node --test tests/api.test.mjs",
-    "build": "node scripts/build.mjs",
-    "validate": "node scripts/validate-artifact.mjs"
+    "dev": "next dev --hostname 127.0.0.1 --port 4173",
+    "test": "node --test tests/*.test.mjs",
+    "prebuild": "node scripts/check-vercel-env.mjs",
+    "build": "next build",
+    "start": "next start --port 4173",
+    "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "7.10.7",
+    "@neondatabase/serverless": "^1.2.1",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sharp": "0.35.5"
   }
 }

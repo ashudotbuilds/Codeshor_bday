@@ -2,3 +2,8 @@ dist/
 site.tar.gz
 .local-data/
 outputs/
+.env*
+!.env.example
+.vercel/
+node_modules/
+.next/
